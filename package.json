@@ -1,0 +1,11 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "A landing-page for natours",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass": "sass sass/style.scss css/style.css -w"
+  },
+  "author": "Zahra",
+  "license": "ISC"
+}
