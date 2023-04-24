@@ -1,0 +1,8 @@
+.section-about {
+  background-color: $grayColor-ligth-1;
+  padding: 25rem 0;
+  margin-top: -20vh;
+  .heading-secondary {
+    @include marginbottom(8rem);
+  }
+}
