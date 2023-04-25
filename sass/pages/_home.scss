@@ -2,7 +2,19 @@
   background-color: $grayColor-ligth-1;
   padding: 25rem 0;
   margin-top: -20vh;
+
   .heading-secondary {
     @include marginbottom(8rem);
   }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.about-content {
+  max-width: 114rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.4rem;
 }

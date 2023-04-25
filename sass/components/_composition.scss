@@ -1,0 +1,39 @@
+// img-box__photos--p1
+// img-box__photos--p2
+// img-box__photos--p3
+@import "../abstracts/variables";
+
+.image-box {
+  position: relative;
+  &__photos {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba($blackColor, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    transition: all 300ms;
+    outline-offset: 1.5rem;
+
+    &--p1 {
+      left: 0;
+      top: -2rem;
+    }
+    &--p2 {
+      right: 0;
+      top: 2rem;
+    }
+
+    &--p3 {
+      right: 15rem;
+      top: 35%;
+    }
+    &:hover {
+      transform: scale(1.1) translateY(-1rem);
+      z-index: 9999;
+      box-shadow: 1rem 4rem 4rem rgba($blackColor, 0.5);
+      outline: 1.5rem solid $primaryColor;
+    }
+  }
+  &:hover &__photos:not(:hover) {
+    transform: scale(0.95);
+  }
+}

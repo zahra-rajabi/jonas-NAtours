@@ -1,3 +1,4 @@
+@import "../abstracts/mixin";
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -46,5 +47,16 @@ body {
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 5rem 1rem 2rem rgba($blackColor, 0.2);
+  }
+}
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  @include marginbottom(1.5rem);
+}
+.paragraph {
+  font-size: 1.6rem;
+  &:not(:last-child) {
+    margin-bottom: 1.2rem;
   }
 }
